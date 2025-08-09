@@ -1,0 +1,323 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  color: white;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.8rem;
+  font-size: clamp(1.2rem, 1vw, 1.5rem);
+}
+
+header {
+  box-shadow: 0px 1px 4px 0.5px rgba(59, 59, 59, 0.333);
+  z-index: 3;
+  position: fixed;
+  top: 0;
+}
+
+nav {
+  background-color: #252525;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo-eko-intro {
+  height: auto;
+  width: 2rem;
+}
+
+.logo-eko {
+  height: 3rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.iconos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.iconos>i {
+  color: white;
+  font-size: x-large;
+  cursor: pointer;
+}
+
+.foto-intro {
+  width: 100%;
+  height: 100vh;
+  filter: brightness(0.4);
+  position: relative;
+  background-size: cover;
+}
+
+.intro-textos {
+  position: absolute;
+  z-index: 2;
+  width: clamp(200px, 80%, 768px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.call-action {
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #2e2e2e;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+.intro-parrafo {
+  color: white;
+  margin-top: 1rem;
+  font-family: "Noto Sans JP", sans-serif;
+  text-align: center;
+  line-height: 1.8rem;
+  font-size: clamp(1rem, 1vw, 1.2rem);
+}
+
+.logo-intro {
+  margin-bottom: 2rem;
+  width: 150px;
+  height: auto;
+}
+
+.p-trabajos {
+  font-size: clamp(1rem, 1vw, 1.2rem);
+  margin-top: 2.5rem;
+  text-align: center;
+  font-weight: 1000;
+  line-height: 1.8;
+}
+
+/*! how-we-are */
+.how-we-are {
+  height: 100vh;
+  background-color: #ff9411;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.how-we-are>h3 {
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #2e2e2e;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.lista-nav {
+  width: clamp(200px, 85%, 768px);
+}
+
+.our-service {
+  color: #2e2e2e;
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: justify;
+  line-height: 1rem;
+}
+
+.li-lista {
+  line-height: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #252525;
+}
+
+/** Conctacto */
+.pic-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textos-contact-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: clamp(200px, 80%, 768px);
+  position: absolute;
+}
+
+.foto-contact {
+  height: 100vh;
+  width: 100%;
+  background-size: contain;
+}
+
+.textos-contact-3>div {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-contact {
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #2e2e2e;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.gracias-contact {
+  text-align: justify;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.part-contact {
+  text-decoration: none;
+}
+
+/*! Footer */
+footer {
+  height: 2rem;
+  background-color: #252525;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer>a {
+  color: white;
+  text-align: center;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  * {
+    line-height: 1.3rem;
+    font-size: 0.9;
+  }
+
+  .iconos {
+    gap: 1.2rem;
+  }
+
+  .foto-intro {
+    object-fit: cover;
+  }
+
+  .intro-textos {
+    width: clamp(200px, 85%, 800px);
+  }
+
+  .intro-parrafo {
+    line-height: 1.2rem;
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    text-align: justify;
+  }
+
+  .logo-intro {
+    margin-bottom: 1rem;
+  }
+
+  .p-trabajos {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+  }
+
+  .call-action {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+
+  .logo-intro {
+    margin: 3rem 0 2rem 0;
+    width: 100px;
+    height: auto;
+  }
+
+  .how-we-are>h3 {
+    margin: 3rem 0 0.5rem 0;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+
+  /** Servicios */
+
+  .lista-nav {
+    width: clamp(300px, 85%, 600px);
+  }
+
+  .our-service {
+    font-size: 0.8rem;
+  }
+
+  .li-lista {
+    font-size: 0.88rem;
+  }
+
+  .textos-contact-3 {
+    width: clamp(200px, 85%, 768px);
+  }
+
+  .foto-contact {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .textos-contact-3>div {
+    gap: 1rem;
+  }
+
+  .titulo-contact {
+    line-height: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .gracias-contact {
+    font-size: 1rem;
+    margin: 1rem 0 1rem 0;
+  }
+
+  .part-contact {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  /*! Footer */
+  footer>a {
+    line-height: .7rem;
+    font-size: 0.6rem;
+  }
+}
+
+
+.ejm {
+  background-color: #ff9411;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ejm-img {
+  transform: rotate(45deg);
+  height: 100vh;
+
+}
